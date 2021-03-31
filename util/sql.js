@@ -1,5 +1,5 @@
-// //  固定写法三步：
-// // 1.加载 MySQL 模块
+//  固定写法三步：
+// 1.加载 MySQL 模块
 // var mysql = require('mysql');
 // // 2.创建 MySQL 连接对象
 // var connection = mysql.createConnection({
@@ -18,8 +18,10 @@
 // });
 
 // // 导出模块
-// // module.exports = connection;
 // module.exports = connection;
+// module.exports = connection;
+
+
 module.exports = {
     query: function (sql, callback) {
         const mysql = require('mysql');
