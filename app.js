@@ -22,10 +22,13 @@ const jwt = require('express-jwt');
 const apiRouter = require('./router/api_router')
 const myRouter = require('./router/my_router')
 const myArticleRouter = require('./router/myarticle_router')
+const indexRouter = require('./router/index_router')
 // 设置类型返回参数
 server.use('/api', apiRouter);
 server.use('/my', myRouter);
 server.use('/my/article', myArticleRouter);
+server.use('/index', indexRouter)
+
 
 // // 错误处理
 // server.use((err, req, res, next) => {

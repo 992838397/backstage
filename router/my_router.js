@@ -6,7 +6,7 @@ const router = express.Router();
 const conn = require('../util/sql')
 // 引入处理头像上传模块
 const multer = require('multer');
-// 精细化去设置，如何去保存文件
+// 精细化去设置，如何去保存router文件
 const storage = multer.diskStorage({
     // 保存在哪里
     destination: function (req, file, cb) {
